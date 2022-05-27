@@ -8,3 +8,7 @@ Hello Jamstack!
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laudantium sunt maxime? Perspiciatis excepturi incidunt autem atque! Voluptatem, ipsa harum! Labore, ut officiis minus libero sequi aspernatur dolores aperiam recusandae!
 
 And trying the hot reload. And testing deployment on Netlify.
+
+{% for post in collections.posts %}
+- [{{post.data.title}}]({{post.url}})
+{% endfor %}
